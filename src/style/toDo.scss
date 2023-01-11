@@ -17,10 +17,26 @@
     font-size: 20px;
   }
 
+  p{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 88%;
+    height: 50px;
+    font-size: 18px;
+  }
+
   form{
+    position: relative;
     margin-top: 10px;
+
     input{
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
       width: 88% !important;
+      border: none !important;
 
       &:focus-visible{
         outline: none;
@@ -28,6 +44,11 @@
 
       &:disabled{
         color: #000;
+      }
+
+      &.on{
+        display: block;
+        background: #fff;
       }
     }
     button{

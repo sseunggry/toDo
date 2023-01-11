@@ -58,6 +58,7 @@ function ToDo({text, id, category}:IToDo) {
                 })}
             </div>
             <form onSubmit={handleSubmit(onValid)}>
+                <p>{text}</p>
                 <input
                     {...register("toDoItem")}
                 />
