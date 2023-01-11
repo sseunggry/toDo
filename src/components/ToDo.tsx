@@ -62,21 +62,12 @@ function ToDo({text, id, category}:IToDo) {
                     {...register("toDoItem")}
                 />
                 <button onClick={onModify} className="btn_modify">
-                    <img src="../img/ico_write.png" alt=""/>
+                    <img src={process.env.PUBLIC_URL + '/img/ico_write.png'} alt=""/>
                 </button>
                 <button onClick={onDelete} className="btn_delete">
-                    <img src="../img/ico_delete.png" alt=""/>
+                    <img src={process.env.PUBLIC_URL + '/img/ico_delete.png'} alt=""/>
                 </button>
             </form>
-            {/*<span>{text}</span>*/}
-            {/*{!modify ? null : (*/}
-            {/*    <form onSubmit={handleSubmit(onValid)}>*/}
-            {/*        <input*/}
-            {/*            {...register("toDoItem")}*/}
-            {/*        />*/}
-            {/*    </form>*/}
-            {/*)}*/}
-            {/*<button onClick={onModify}>수정</button>*/}
         </li>
     )
 }
