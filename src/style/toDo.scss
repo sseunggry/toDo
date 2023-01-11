@@ -1,0 +1,66 @@
+.list{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: #eee;
+  border-radius: 10px;
+
+  + .list{
+    margin-top: 16px;
+  }
+
+  span{
+    margin: 20px auto 10px 0;
+    width: 80%;
+    font-size: 20px;
+  }
+
+  form{
+    margin-top: 10px;
+    input{
+      width: 88% !important;
+
+      &:focus-visible{
+        outline: none;
+      }
+
+      &:disabled{
+        color: #000;
+      }
+    }
+    button{
+      height: auto;
+
+      img{width: 100%;}
+
+      &.btn_modify{
+        width: 30px;
+        right: 30px;
+      }
+
+      &.btn_delete{
+        width: 25px;
+        right: 0;
+      }
+    }
+  }
+
+  .btn_list{
+    width: 100%;
+    button{
+      margin-top: 4px;
+      padding: 8px 10px;
+      font-size: 14px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+
+      + button{
+        margin-left: 4px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
