@@ -1,5 +1,5 @@
 {
-  "name": "master3",
+  "name": "toDo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -51,5 +51,5 @@
   "devDependencies": {
     "@types/styled-components": "^5.1.26"
   },
-  "homepage": "https://seunggry.github.io/master3"
+  "homepage": "https://sseunggry.github.io/toDo"
 }
